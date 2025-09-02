@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background-color: #f0f8ff;
+      background-color: #e6f2ff;
       text-align: center;
       padding-top: 100px;
       font-family: Arial, sans-serif;
@@ -19,10 +19,30 @@
       font-size: 1.2em;
       color: #666;
     }
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #2c3e50;
+    }
   </style>
 </head>
 <body>
-  <h1>葉家咪盯著你！</h1>
-  <p>喵喵咪貓喵喵嗎喵貓腰咪凹 咪！</p>
+  <h1>哈囉，我是葉約辰！</h1>
+  <p>這是我自己架設的第一個網站 🎉</p>
+
+  <button onclick="showMessage()">點我一下</button>
+  <div id="result"></div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('result').innerText = '葉約辰今天真棒！💪✨';
+    }
+  </script>
 </body>
 </html>
